@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor ESP32</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Monitor ESP32</h1>
+        <p class="subtitulo">
+            Potenciómetro en tiempo real
+        </p>
+        <div class="tarjeta">
+            <h2>Valor ADC</h2>
+            <div id="valor">
+                ---
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h2>Voltaje</h2>
+            <div id="voltaje">
+                --- V
+            </div>
+        </div>
+        <div class="barra-contenedor">
+            <div id="barra"></div>
+        </div>
+        <p id="estado">
+            Conectando con Firebase...
+        </p>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
